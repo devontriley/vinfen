@@ -6,12 +6,18 @@ Version:      1.0.0
 */
 :root {
   --borderRadius: 10px;
-  --bs-primary: #26438C;
-  --bs-primary-shade: #213A78;
-  --bs-primary-tint: #3155B1;
-  --bs-secondary: #E62A30;
-  --bs-secondary-shade: #CF181E;
-  --bs-secondary-tint: #E9474D;
+  --bs-primary: #ED892B;
+  --bs-primary-shade: #DD7513;
+  --bs-primary-tint: #F09F54;
+  --bs-secondary: #007993;
+  --bs-secondary-shade: #00687F;
+  --bs-secondary-tint: #00A3C8;
+  --bs-tertiary-1: #B6DA58;
+  --bs-tertiary-1-shade: #A5D234;
+  --bs-tertiary-1-tint: #C0E070;
+  --bs-tertiary-2: #4A9EA6;
+  --bs-tertiary-2-shade: #40878E;
+  --bs-tertiary-2-tint: #5FB0B7;
 }
 
 .btn.btn-primary, body .gform_wrapper.gravity-theme .gform_footer button,
