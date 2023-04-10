@@ -5,7 +5,7 @@ Template:     Heretic
 Version:      1.0.0
 */
 :root {
-  --borderRadius: 50px;
+  --borderRadius: 10px;
   --bs-primary: #26438C;
   --bs-primary-shade: #213A78;
   --bs-primary-tint: #3155B1;
