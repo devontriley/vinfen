@@ -24,8 +24,7 @@ add_action( 'wp_head', 'append_gtm_header' );
 // Add Google Tag Manger to body
 function append_gtm_body () { ?>
     <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDSV2NZ"
-                      height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TDSV2NZ" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <!-- End Google Tag Manager (noscript) -->
 <?php }
 add_action( 'wp_body_open', 'append_gtm_body' );
