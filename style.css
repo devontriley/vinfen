@@ -5,7 +5,7 @@ Template:     Heretic
 Version:      1.0.0
 */
 :root {
-  --borderRadius: 10px;
+  --bs-body-color: #0B1429;
   --bs-body-font-family: Calibri, Candara, Segoe, "Segoe UI", Helvetica, Arial, sans-serif;
   --bs-primary: #ED892B;
   --bs-primary-shade: #DD7513;
@@ -19,6 +19,7 @@ Version:      1.0.0
   --bs-tertiary-2: #4A9EA6;
   --bs-tertiary-2-shade: #40878E;
   --bs-tertiary-2-tint: #5FB0B7;
+  --borderRadius: 10px;
   --eyebrow-color: var(--bs-tertiary-2);
   --rte-fifty-fifty-bg-color: #E6E8E8;
 }

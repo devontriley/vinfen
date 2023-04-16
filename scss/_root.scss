@@ -1,5 +1,7 @@
 :root {
-    --borderRadius: 10px;
+    // Bootstrap variables
+
+    --bs-body-color: #0B1429;
 
     --bs-body-font-family: Calibri, Candara, Segoe, "Segoe UI", Helvetica, Arial, sans-serif;
 
@@ -18,6 +20,10 @@
     --bs-tertiary-2: #4A9EA6;
     --bs-tertiary-2-shade: #40878E;
     --bs-tertiary-2-tint: #5FB0B7;
+
+    // Custom variables
+
+    --borderRadius: 10px;
 
     --eyebrow-color: var(--bs-tertiary-2);
 
