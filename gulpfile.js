@@ -32,7 +32,17 @@ function mainSCSS() {
         .pipe(browsersync.stream());
 }
 
+function layoutSCSS() {
+    return src([
+        './layouts/**/*.scss'
+    ])
+        .pipe(sass().on('error', sass.logError))
+        .pipe(dest('layouts'))
+        .pipe(browsersync.stream());
+}
+
 function watchFiles () {
+    watch( [ './layouts/**/*.scss' ], series( layoutSCSS, browserSyncReload ) )
     watch( [ './scss/**/*.scss' ], series(mainSCSS, browserSyncReload) )
 }
 exports.build = parallel( mainSCSS )
