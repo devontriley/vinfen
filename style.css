@@ -24,7 +24,7 @@ Version:      1.0.0
   --rte-fifty-fifty-bg-color: #E6E8E8;
   --hero-carousel-bg-light: #F3F9FA;
   --hero-carousel-bg-dark: #0C1F22;
-  --newsletter-bg-color: var(--bs-primary);
+  --newsletter-bg-color: var(--bs-secondary);
 }
 
 .btn.btn-primary, body .gform_wrapper.gravity-theme .gform_footer button,
