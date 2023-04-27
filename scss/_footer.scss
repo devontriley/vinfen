@@ -1,0 +1,15 @@
+.primary-footer {
+    background-color: var(--bs-secondary);
+    color: #fff;
+
+    .footer-top {
+        border-top: none;
+        border-bottom-color: var(--bs-secondary-tint);
+    }
+
+    a {
+        &:hover {
+            color: rgb(0,0,0,0.8);
+        }
+    }
+}

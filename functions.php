@@ -43,3 +43,5 @@ if (!function_exists('vinfen_scripts')) :
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'vinfen_scripts' );
+
+include( 'inc/vinfen-hooks.php' );

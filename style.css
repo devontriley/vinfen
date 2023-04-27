@@ -90,3 +90,15 @@ body .gform_wrapper.gravity-theme .gform_page_footer input.btn-secondary {
 body {
   font-family: Calibri, Helvetica, Arial, sans-serif;
 }
+
+.primary-footer {
+  background-color: var(--bs-secondary);
+  color: #fff;
+}
+.primary-footer .footer-top {
+  border-top: none;
+  border-bottom-color: var(--bs-secondary-tint);
+}
+.primary-footer a:hover {
+  color: rgba(0, 0, 0, 0.8);
+}
