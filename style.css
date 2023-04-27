@@ -91,6 +91,10 @@ body {
   font-family: Calibri, Helvetica, Arial, sans-serif;
 }
 
+.primary-header {
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+}
+
 .primary-footer {
   background-color: var(--bs-secondary);
   color: #fff;
