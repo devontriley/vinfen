@@ -91,6 +91,14 @@ body {
   font-family: Calibri, Helvetica, Arial, sans-serif;
 }
 
+a {
+  color: var(--bs-body-color);
+  text-decoration: underline;
+}
+a:hover {
+  color: var(--bs-primary);
+}
+
 .primary-header {
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
 }
