@@ -124,6 +124,19 @@ a:hover {
   fill: var(--bs-secondary);
 }
 
+.nav-drawer .primary-nav > li a:hover {
+  color: var(--bs-secondary);
+}
+.nav-drawer .primary-nav > li span:hover {
+  color: var(--bs-secondary);
+}
+.nav-drawer .primary-nav > li.has-children.active .sub-menu a {
+  padding: 0;
+}
+.nav-drawer .primary-nav > li.has-children.active .sub-menu .sub-menu-icon {
+  display: none;
+}
+
 .primary-footer {
   background-color: var(--bs-secondary);
   color: #fff;
