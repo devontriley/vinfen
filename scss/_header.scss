@@ -1,3 +1,13 @@
 .primary-header {
     box-shadow: 0 10px 10px rgba(0,0,0,0.05);
 }
+
+:not(.nav-drawer) > .primary-nav {
+    &.menu-top {
+        & > li {
+            &:hover {
+                color: var(--bs-secondary);
+            }
+        }
+    }
+}
