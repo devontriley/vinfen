@@ -22,6 +22,8 @@ Version:      1.0.0
   --borderRadius: 10px;
   --header-color: var(--bs-secondary);
   --eyebrow-color: var(--bs-tertiary-2);
+  --link-color: var(--bs-body-color);
+  --link-hover-color: var(--bs-secondary);
   --notification-bar-bg: var(--bs-secondary);
   --rte-fifty-fifty-bg-color: #E6E8E8;
   --hero-carousel-bg-light: #F3F9FA;
@@ -97,7 +99,7 @@ a {
   text-decoration: underline;
 }
 a:hover {
-  color: var(--bs-secondary);
+  color: var(--link-hover-color);
 }
 
 .primary-header {

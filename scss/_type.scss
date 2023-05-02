@@ -3,6 +3,6 @@ a {
     text-decoration: underline;
 
     &:hover {
-        color: var(--bs-secondary);
+        color: var(--link-hover-color);
     }
 }
