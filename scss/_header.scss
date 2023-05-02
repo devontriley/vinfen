@@ -15,11 +15,21 @@
 .primary-nav-container .sub-menu {
     li {
         a {
+            padding: 7px 20px;
+
+            .sub-menu-icon {
+                display: none;
+            }
+
             &:hover {
                 &:before {
                     content: '';
                     background: var(--bs-secondary);
                 }
+            }
+
+            &:hover .bi-arrow-right {
+                fill: var(--bs-secondary);
             }
         }
     }

@@ -110,9 +110,18 @@ a:hover {
   color: var(--bs-secondary);
 }
 
+.primary-nav-container .sub-menu li a {
+  padding: 7px 20px;
+}
+.primary-nav-container .sub-menu li a .sub-menu-icon {
+  display: none;
+}
 .primary-nav-container .sub-menu li a:hover:before {
   content: "";
   background: var(--bs-secondary);
+}
+.primary-nav-container .sub-menu li a:hover .bi-arrow-right {
+  fill: var(--bs-secondary);
 }
 
 .primary-footer {
