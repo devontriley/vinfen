@@ -22,6 +22,7 @@ Version:      1.0.0
   --borderRadius: 10px;
   --header-color: var(--bs-secondary);
   --eyebrow-color: var(--bs-tertiary-2);
+  --notification-bar-bg: var(--bs-secondary);
   --rte-fifty-fifty-bg-color: #E6E8E8;
   --hero-carousel-bg-light: #F3F9FA;
   --hero-carousel-bg-dark: #0C1F22;
