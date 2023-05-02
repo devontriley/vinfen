@@ -11,3 +11,16 @@
         }
     }
 }
+
+.primary-nav-container .sub-menu {
+    li {
+        a {
+            &:hover {
+                &:before {
+                    content: '';
+                    background: var(--bs-secondary);
+                }
+            }
+        }
+    }
+}

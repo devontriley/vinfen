@@ -110,6 +110,11 @@ a:hover {
   color: var(--bs-secondary);
 }
 
+.primary-nav-container .sub-menu li a:hover:before {
+  content: "";
+  background: var(--bs-secondary);
+}
+
 .primary-footer {
   background-color: var(--bs-secondary);
   color: #fff;
