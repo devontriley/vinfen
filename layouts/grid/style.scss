@@ -1,0 +1,17 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+/* Card box shadows */
+.layout-grid.info-boxes,
+.layout-grid.articles,
+.layout-grid.services,
+.layout-grid.pages,
+.layout-grid.team-members,
+.layout-grid.external-links,
+.layout-grid.logos {
+
+    .card {
+        box-shadow: var(--cardBoxShadow);
+    }
+}
