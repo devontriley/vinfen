@@ -29,18 +29,18 @@ if ( $bio && !$allGridTeamMembers[$id] ) {
             <p class="title mb-0"><?php echo $title ?></p>
         <?php endif; ?>
         <!-- Link -->
-        <?php
-        if ( $textLink ) : ?>
+        <?php if ( $bio ) : ?>
+        <p class="mb-0">
+            <a href="#" class="team-member-open-drawer" data-id="<?php echo $id ?>">
+                View Bio
+            </a>
+        </p>
+        <?php endif; ?>
+        <?php if ( $textLink ) : ?>
             <p class="mb-0">
-                <?php if( $bio ) : ?>
-                    <a href="#" class="team-member-open-drawer" data-id="<?php echo $id ?>">
-                        <?php echo $textLink['title'] ?>
-                    </a>
-                <?php else : ?>
-                    <a href="<?php echo $textLink['url'] ?>" target="<?php echo $textLink['target'] ?>">
-                        <?php echo $textLink['title'] ?>
-                    </a>
-                <?php endif; ?>
+                <a href="<?php echo $textLink['url'] ?>" target="<?php echo $textLink['target'] ?>">
+                    <?php echo $textLink['title'] ?>
+                </a>
             </p>
         <?php endif; ?>
     </div>

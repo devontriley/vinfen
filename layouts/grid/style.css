@@ -76,9 +76,6 @@
 .layout-grid.info-boxes .card {
   height: 100%;
 }
-.layout-grid.info-boxes .card:has(a):hover .card-title {
-  color: var(--link-hover-color);
-}
 .layout-grid.info-boxes .card-img-top {
   position: relative;
   height: auto;
@@ -101,6 +98,16 @@
   height: auto !important;
   max-height: 60%;
   object-fit: inherit;
+}
+.layout-grid.info-boxes [data-teal-bg="1"] .card {
+  background: var(--bs-secondary);
+  color: #fff;
+}
+.layout-grid.info-boxes [data-teal-bg="1"] .card a {
+  color: #fff;
+}
+.layout-grid.info-boxes [data-teal-bg="1"] .card a:hover {
+  color: var(--bs-tertiary-1);
 }
 @media (max-width: 1199.98px) {
   .layout-grid.info-boxes p {

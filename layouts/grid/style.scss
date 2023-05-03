@@ -84,12 +84,6 @@
 
     .card {
         height: 100%;
-
-        &:has(a):hover {
-            .card-title {
-                color: var(--link-hover-color);
-            }
-        }
     }
 
     .card-img-top {
@@ -116,6 +110,19 @@
         height: auto !important;
         max-height: 60%;
         object-fit: inherit;
+    }
+
+    [data-teal-bg="1"] .card {
+        background: var(--bs-secondary);
+        color: $white;
+
+        a {
+            color: $white;
+
+            &:hover {
+                color: var(--bs-tertiary-1);
+            }
+        }
     }
 
     p {
