@@ -188,3 +188,8 @@ a:hover {
   color: var(--bs-secondary);
   font-size: 1.25rem;
 }
+
+.footer-badges img {
+  max-width: 90%;
+  height: auto;
+}

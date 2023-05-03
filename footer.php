@@ -75,7 +75,7 @@ $footerBadges = get_field( 'footer_badges', 'options' );
                 </div>
             <?php endif; ?>
             <?php if ( $footerBadges ) : ?>
-                <div class="col-6 col-md-3 col-xl-2">
+                <div class="col-6 col-md-3 col-xl-2 footer-badges">
                     <?php foreach ( $footerBadges as $badge ) : ?>
                         <div class="mb-3 text-center">
                             <?php echo wp_get_attachment_image( $badge['badge']['ID'], 'medium' ) ?>
