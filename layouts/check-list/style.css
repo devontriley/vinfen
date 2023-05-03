@@ -1,0 +1,38 @@
+.layout-check-list h2 {
+  color: var(--header-color);
+  margin-bottom: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  .layout-check-list h2 {
+    margin-bottom: 2.5rem;
+  }
+}
+.layout-check-list ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.layout-check-list ul li {
+  font-size: 1.25rem;
+  position: relative;
+  padding-left: 45px;
+  margin-bottom: 1em;
+}
+.layout-check-list ul li .check {
+  width: 30px;
+  height: 30px;
+  border-radius: 30px;
+  background-color: var(--bs-primary);
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+.layout-check-list ul li svg {
+  color: #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 26px;
+  height: 26px;
+}
