@@ -13,3 +13,24 @@
         }
     }
 }
+
+.footer-bottom {
+    .social-links {
+        a {
+            background: var(--bs-tertiary-1-shade);
+
+            &:hover {
+                background: $white;
+
+                i {
+                    color: var(--bs-secondary);
+                }
+            }
+
+            i {
+                color: var(--bs-secondary);
+                font-size: 1.25rem;
+            }
+        }
+    }
+}

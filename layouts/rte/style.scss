@@ -1,0 +1,127 @@
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins";
+
+.layout-rte {
+
+    &.full-bleed-bg {
+        @include padding-top(80px);
+        @include padding-bottom(80px);
+        background: var(--bs-secondary);
+        color: $white;
+
+        h1, .h1, h2, .h2, h3, .h3, .eyebrow {
+            color: $white;
+        }
+
+        a:not(.btn) {
+            color: $white;
+
+            &:hover {
+                color: var(--bs-tertiary-1);
+            }
+        }
+    }
+
+    .row {
+        align-items: center;
+
+        &.image-top-aligned {
+            align-items: flex-start;
+        }
+    }
+
+    .image {
+        order: 2;
+        @include margin-top(30px);
+
+        @include media-breakpoint-up(lg) {
+            order: inherit;
+            margin-top: 0;
+        }
+
+        img {
+            max-width: 100% !important;
+            height: auto !important;
+            border-radius: var(--borderRadius);
+        }
+
+        iframe {
+            max-width: 100%;
+        }
+    }
+
+    h1, .h1, h2, .h2, h3, .h3 {
+        color: var(--header-color);
+    }
+
+    p:last-child {
+        margin-bottom: 0;
+    }
+
+    ul, ol {
+        margin: 1.5em 0;
+        padding: 0 0 0 1em;
+
+        li {
+            margin-bottom: 0.5em;
+        }
+    }
+
+    ul:last-child,
+    ol:last-child,
+    p:last-child {
+        margin-bottom: 0;
+    }
+}
+
+/* Fifty Fifty */
+
+.layout-rte.size-fiftyfifty {
+    .row {
+        align-items: stretch;
+    }
+
+    .copy-inner {
+        background: var(--rte-fifty-fifty-bg-color);
+        display: flex;
+        flex-wrap: nowrap;
+        align-items: center;
+        height: 100%;
+        padding: 30px;
+        border-radius: var(--borderRadius);
+
+        @include media-breakpoint-up(sm) {
+            @include padding(70px calc(8.33333333% + var(--bs-gutter-x)));
+        }
+    }
+
+    p {
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .image img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover;
+    }
+}
+
+/* Sidebar */
+
+.layout-rte.size-sidebar {
+    .row {
+        align-items: flex-start;
+    }
+}
+
+/**************************
+ Admin specific styles
+ *************************/
+
+.layout-rte.is-preview {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
