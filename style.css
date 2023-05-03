@@ -20,6 +20,7 @@ Version:      1.0.0
   --bs-tertiary-2-shade: #40878E;
   --bs-tertiary-2-tint: #5FB0B7;
   --borderRadius: 10px;
+  --cardBoxShadow: 0 0 12px rgba(0,0,0,0.2);
   --header-color: var(--bs-secondary);
   --eyebrow-color: var(--bs-tertiary-2);
   --link-color: var(--bs-body-color);
