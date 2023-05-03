@@ -20,28 +20,25 @@ if ( $bio && !$allGridTeamMembers[$id] ) {
         <?php echo $featuredImage ?>
     <?php endif; ?>
     <div class="card-body">
-        <!-- Header -->
-        <?php if( $teamMember->post_title ) : ?>
-            <h3 class="card-title"><?php echo $teamMember->post_title ?></h3>
-        <?php endif; ?>
-        <!-- Title -->
-        <?php if ( $title ) : ?>
-            <p class="title mb-0"><?php echo $title ?></p>
-        <?php endif; ?>
-        <!-- Link -->
+        <div style="flex-basis: 100%;">
+            <?php if( $teamMember->post_title ) : ?>
+                <h3 class="card-title"><?php echo $teamMember->post_title ?></h3>
+            <?php endif; ?>
+            <?php if ( $title ) : ?>
+                <p class="title mb-0"><?php echo $title ?></p>
+            <?php endif; ?>
+            <?php if ( $textLink ) : ?>
+                <p class="mb-0">
+                    <a href="<?php echo $textLink['url'] ?>" target="<?php echo $textLink['target'] ?>">
+                        <?php echo $textLink['title'] ?>
+                    </a>
+                </p>
+            <?php endif; ?>
+        </div>
         <?php if ( $bio ) : ?>
-        <p class="mb-0">
-            <a href="#" class="team-member-open-drawer" data-id="<?php echo $id ?>">
+            <a href="#" class="team-member-open-drawer btn btn-secondary" data-id="<?php echo $id ?>">
                 View Bio
             </a>
-        </p>
-        <?php endif; ?>
-        <?php if ( $textLink ) : ?>
-            <p class="mb-0">
-                <a href="<?php echo $textLink['url'] ?>" target="<?php echo $textLink['target'] ?>">
-                    <?php echo $textLink['title'] ?>
-                </a>
-            </p>
         <?php endif; ?>
     </div>
 </div>

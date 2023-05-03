@@ -3,7 +3,7 @@
 @import "../../node_modules/bootstrap/scss/mixins";
 
 .layout-grid.info-boxes .card,
-.layout-team-members .card,
+.layout-grid.team-members .card,
 .layout-grid.external-links .card,
 .layout-grid.logos .card {
     box-shadow: var(--cardBoxShadow);
@@ -220,11 +220,30 @@
     .card {
         height: 100%;
 
+
+        .card-body {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .card-title {
+            color: var(--bs-secondary);
+
+            &:after {
+                content: '';
+                display: block;
+                width: 30%;
+                height: 4px;
+                margin: var(--bs-card-title-spacer-y) auto 0 auto;
+                background-color: var(--bs-tertiary-1);
+            }
+        }
+
         .title {
             @include font-size(16px);
         }
 
-        a {
+        a:not(.btn) {
             @include font-size(18px);
             color: var(--bs-primary);
             text-decoration: none;
@@ -232,6 +251,13 @@
             &:hover {
                 text-decoration: underline;
             }
+        }
+
+        .team-member-open-drawer {
+            display: block;
+            flex-basis: 100%;
+            align-self: flex-end;
+            margin-top: 20px;
         }
     }
 
@@ -244,8 +270,17 @@
 }
 
 /* Team Member Drawer */
-#team-members-bio-drawer {
-    .btn-close {
+#team-members-dialog {
+    width: calc(100vw - 30px);
+    max-width: 700px;
+    border: none;
+    border-radius: var(--borderRadius);
+
+    &::backdrop {
+        background: rgba(0,0,0,0.5);
+    }
+
+    .close-team-members-dialog {
         background: none;
         border: none;
         padding: 0;
@@ -254,16 +289,11 @@
         position: absolute;
         right: 15px;
         top: 15px;
+        cursor: pointer;
 
-        svg {
-            &:hover {
-                color: var(--link-hover-color);
-            }
+        &:hover {
+            color: var(--link-hover-color);
         }
-    }
-
-    .offcanvas-body {
-        padding-top: 35px;
     }
 
     .team-member {

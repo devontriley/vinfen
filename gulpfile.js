@@ -1,6 +1,7 @@
 const { src, dest, watch, series, parallel } = require( 'gulp' )
 const sass = require('gulp-sass')(require('sass'));
 const uglify = require('gulp-uglify')
+const rename = require('gulp-rename')
 const browsersync = require("browser-sync").create();
 
 // BrowserSync
@@ -21,6 +22,19 @@ function browserSync(done) {
 function browserSyncReload(done) {
     browsersync.reload();
     done();
+}
+
+function js() {
+    return src([
+        '**/*.js',
+        '!**/*.min.js',
+        '!gulpfile.js',
+        '!node_modules/**'
+    ])
+        .pipe(uglify())
+        .pipe(rename({ extname: '.min.js' }))
+        .pipe(dest('.'))
+        .pipe(browsersync.stream());
 }
 
 function mainSCSS() {
@@ -44,6 +58,7 @@ function layoutSCSS() {
 function watchFiles () {
     watch( [ './layouts/**/*.scss' ], series( layoutSCSS, browserSyncReload ) )
     watch( [ './scss/**/*.scss' ], series(mainSCSS, browserSyncReload) )
+    watch( [ '**/*.js', '!**/*.min.js', '!gulpfile.js', '!mode_modules/**' ], series( js, browserSyncReload ) )
 }
-exports.build = parallel( mainSCSS )
+exports.build = parallel( layoutSCSS, mainSCSS, js )
 exports.default = parallel( browserSync, watchFiles )
