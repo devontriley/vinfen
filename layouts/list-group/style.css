@@ -31,6 +31,9 @@
 .layout-list-group ul li:last-child {
   margin-bottom: 0;
 }
+.layout-list-group ul li p {
+  margin: 0;
+}
 
 /**************************
  Admin specific styles
