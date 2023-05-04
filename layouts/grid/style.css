@@ -163,7 +163,7 @@
   position: relative;
   width: 100%;
   height: auto;
-  aspect-ratio: 2.12/1;
+  aspect-ratio: 1.5/1;
   background: #eeeeee;
   border-radius: var(--borderRadius);
   overflow: hidden;

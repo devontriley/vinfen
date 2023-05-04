@@ -1,7 +1,7 @@
 .layout-stats div[class*=col] {
   margin-bottom: var(--bs-gutter-x);
 }
-.layout-stats h2 {
+.layout-stats h2, .layout-stats .h2 {
   color: var(--header-color);
 }
 .layout-stats .stat-wrapper {
