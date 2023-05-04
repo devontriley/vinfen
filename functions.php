@@ -31,7 +31,13 @@ add_action( 'wp_body_open', 'append_gtm_body' );
 
 if (!function_exists('vinfen_enqueue_styles')) :
     function vinfen_enqueue_styles() {
+        $postType = get_post_type();
+
         wp_enqueue_style( 'vinfen-style', get_stylesheet_uri(), array( 'heretic-style' ), wp_get_theme()->get( 'Version' ) );
+
+        if ( is_singular( 'post' ) ) {
+            wp_enqueue_style( 'vinfen-layout-grid', get_stylesheet_directory_uri().'/layouts/grid/style.css', array( 'heretic-layout-grid' ) );
+        }
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'vinfen_enqueue_styles' );
