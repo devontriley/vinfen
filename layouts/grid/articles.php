@@ -45,8 +45,7 @@ function getArticles ( $articleCount ) {
         $isBlogHome = is_page_template( 'page-blog-home.php' );
         $blogPosts = new WP_Query(array(
             'post_type' => 'post',
-            'posts_per_page' => $articleCount ?: 3,
-            'offset' => $isBlogHome ? 3 : 0
+            'posts_per_page' => $articleCount ?: 3
         ));
         $articles = $blogPosts->posts;
 
