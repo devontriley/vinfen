@@ -4,6 +4,19 @@
 
 .layout-list-group {
 
+    .header {
+        @include margin-bottom(40px);
+
+        h2 {
+            color: var(--bs-secondary);
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
     .column2 {
         margin-top: $grid-gutter-width;
 
