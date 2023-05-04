@@ -29,7 +29,24 @@ $button = get_sub_field('button');
     <div class="row <?php if ( $imageTopAligned && $size === 'Medium' ) { echo 'image-top-aligned'; }?>">
     <?php endif; ?>
 
-            <?php if ( $size === 'Large' ) : ?>
+            <?php if ( $size === 'Full' ) : ?>
+
+                <div class="<?php echo 'col-12' ?>">
+                    <?php if ( $eyebrowText ) : ?>
+                        <p class="eyebrow"><?php echo $eyebrowText ?></p>
+                    <?php endif; ?>
+                    <?php if ( $header ) : ?>
+                        <<?php echo $headerSize ?>><?php echo $header ?></<?php echo $headerSize ?>>
+                    <?php endif; ?>
+                    <?php if ( $bodyCopy ) : ?>
+                        <?php echo apply_filters( 'the_content', $bodyCopy ) ?>
+                    <?php endif; ?>
+                    <?php if ( $button ) : ?>
+                        <?php button( $button['title'], $button['url'], $button['target'], 'btn btn-primary' ); ?>
+                    <?php endif; ?>
+                </div>
+
+            <?php elseif ( $size === 'Large' ) : ?>
 
                 <div class="<?php echo $isServicesSingle ? 'col-12' : 'col-sm-10 offset-sm-1 col-md-8 offset-md-2' ?>">
                     <!-- Eyebrow text -->

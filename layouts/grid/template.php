@@ -6,6 +6,8 @@ if ( ! isset( $columns ) ) $columns = get_sub_field('columns');
 if ( ! isset( $imageType ) ) $imageType = get_sub_field('image_type');
 if ( ! isset( $header ) ) $header = get_sub_field('header');
 if ( ! isset( $headerSize ) ) $headerSize = get_sub_field('header_size');
+if ( ! isset( $centerHeader ) ) $centerHeader = get_sub_field( 'center_header' );
+if ( ! isset( $bodyCopy ) ) $bodyCopy = get_sub_field( 'body_copy' );
 if ( ! isset( $cards ) ) $cards = get_sub_field('cards');
 ?>
 
@@ -43,6 +45,7 @@ if ( ! isset( $cards ) ) $cards = get_sub_field('cards');
     $imageType,
     $header,
     $headerSize,
+    $bodyCopy,
     $cards
 );
 ?>

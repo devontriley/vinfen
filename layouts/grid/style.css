@@ -20,16 +20,21 @@
 .layout-grid {
   clear: both; /* Fixes float issue on woocommerce product/category grid */
 }
+.layout-grid .header {
+  margin-bottom: calc(1.375rem + 1.5vw);
+}
+@media (min-width: 1200px) {
+  .layout-grid .header {
+    margin-bottom: 2.5rem;
+  }
+}
 .layout-grid .header h1, .layout-grid .header .h1,
 .layout-grid .header h2, .layout-grid .header .h2,
 .layout-grid .header h3, .layout-grid .header .h3 {
   color: var(--header-color);
 }
-.layout-grid .header h1, .layout-grid .header .h1 {
-  margin-bottom: 1.08em;
-}
-.layout-grid .header h2, .layout-grid .header .h2, .layout-grid .header h3, .layout-grid .header .h3 {
-  margin-bottom: 2.5em;
+.layout-grid .header h1, .layout-grid .header .h1, .layout-grid .header h2, .layout-grid .header .h2, .layout-grid .header h3, .layout-grid .header .h3 {
+  margin-bottom: 0.75em;
 }
 
 /* Icon and Blurb */

@@ -1,7 +1,6 @@
 <?php
 $postsPage = is_home();
 $postSingle = is_singular( 'post' );
-$centerHeader = get_sub_field( 'center_header' );
 $showArticlesButton = get_sub_field( 'show_articles_button' );
 $articleCount = get_sub_field( 'article_count' );
 
@@ -67,6 +66,11 @@ $articles = getArticles( $articleCount );
             <<?php echo $headerSize ?>>
                 <?php echo $header ?>
             </<?php echo $headerSize ?>>
+            <?php if ( $bodyCopy ) : ?>
+                <div class="col-6">
+                    <?php echo $bodyCopy ?>
+                </div>
+            <?php endif; ?>
         </div>
     <?php elseif ( $postSingle ) : ?>
         <div class="header text-center col-md-8 offset-md-2">

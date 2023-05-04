@@ -2,6 +2,7 @@
 global $layoutCounter;
 
 $header = get_sub_field( 'header' );
+$bodyCopy = get_sub_field( 'body_copy' );
 $listItems = get_sub_field( 'list_items' );
 ?>
 
@@ -9,8 +10,15 @@ $listItems = get_sub_field( 'list_items' );
     <div class="container-lg">
         <div class="row">
             <div class="col-sm-10 offset-sm-1 col-lg-8 offset-lg-2">
-                <?php if ( $header ) : ?>
-                    <h2><?php echo $header ?></h2>
+                <?php if ( $header || $bodyCopy ) : ?>
+                    <div class="header">
+                        <?php if ( $header ) : ?>
+                            <h2><?php echo $header ?></h2>
+                        <?php endif; ?>
+                        <?php if ( $bodyCopy ) : ?>
+                            <?php echo $bodyCopy ?>
+                        <?php endif; ?>
+                    </div>
                 <?php endif; ?>
 
                 <?php if ( $listItems ) : ?>
