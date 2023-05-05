@@ -364,10 +364,10 @@ a:hover {
   font-size: 1.25rem;
 }
 .footer-bottom .social-links a:hover {
-  background: var(--bs-secondary-shade);
+  background: var(--bs-tertiary-1);
 }
 .footer-bottom .social-links a:hover i {
-  color: #fff;
+  color: var(--bs-secondary);
 }
 
 .footer-badges img {
