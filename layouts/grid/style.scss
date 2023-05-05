@@ -2,23 +2,6 @@
 @import "../../node_modules/bootstrap/scss/variables";
 @import "../../node_modules/bootstrap/scss/mixins";
 
-.layout-grid.info-boxes .card,
-.layout-grid.team-members .card,
-.layout-grid.external-links .card,
-.layout-grid.logos .card {
-    box-shadow: var(--cardBoxShadow);
-}
-
-.layout-grid.articles .card,
-.layout-grid.services .card,
-.layout-grid.pages .card {
-    overflow: visible;
-
-    .image {
-        box-shadow: var(--cardBoxShadow);
-    }
-}
-
 /* Universal Grid */
 .layout-grid {
     clear: both; /* Fixes float issue on woocommerce product/category grid */

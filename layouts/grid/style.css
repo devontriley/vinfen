@@ -1,21 +1,3 @@
-.layout-grid.info-boxes .card,
-.layout-grid.team-members .card,
-.layout-grid.external-links .card,
-.layout-grid.logos .card {
-  box-shadow: var(--cardBoxShadow);
-}
-
-.layout-grid.articles .card,
-.layout-grid.services .card,
-.layout-grid.pages .card {
-  overflow: visible;
-}
-.layout-grid.articles .card .image,
-.layout-grid.services .card .image,
-.layout-grid.pages .card .image {
-  box-shadow: var(--cardBoxShadow);
-}
-
 /* Universal Grid */
 .layout-grid {
   clear: both; /* Fixes float issue on woocommerce product/category grid */
