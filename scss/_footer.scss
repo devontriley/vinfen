@@ -17,19 +17,19 @@
 .footer-bottom {
     .social-links {
         a {
-            background: var(--bs-tertiary-1-shade);
-
-            &:hover {
-                background: $white;
-
-                i {
-                    color: var(--bs-secondary);
-                }
-            }
+            background: $white;
 
             i {
                 color: var(--bs-secondary);
                 font-size: 1.25rem;
+            }
+
+            &:hover {
+                background: var(--bs-secondary-shade);
+
+                i {
+                    color: $white;
+                }
             }
         }
     }

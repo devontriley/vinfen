@@ -357,17 +357,17 @@ a:hover {
 }
 
 .footer-bottom .social-links a {
-  background: var(--bs-tertiary-1-shade);
-}
-.footer-bottom .social-links a:hover {
   background: #fff;
-}
-.footer-bottom .social-links a:hover i {
-  color: var(--bs-secondary);
 }
 .footer-bottom .social-links a i {
   color: var(--bs-secondary);
   font-size: 1.25rem;
+}
+.footer-bottom .social-links a:hover {
+  background: var(--bs-secondary-shade);
+}
+.footer-bottom .social-links a:hover i {
+  color: #fff;
 }
 
 .footer-badges img {
