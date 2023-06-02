@@ -32,7 +32,7 @@ Version:      1.0.0
   --newsletter-bg-color: var(--bs-secondary);
 }
 
-.btn.btn-primary, body .gform_wrapper.gravity-theme .gform_footer button,
+.btn.btn-primary, .services-facets button.facetwp-reset, body .gform_wrapper.gravity-theme .gform_footer button,
 body .gform_wrapper.gravity-theme .gform_footer input,
 body .gform_wrapper.gravity-theme .gform_page_footer button,
 body .gform_wrapper.gravity-theme .gform_page_footer input {
@@ -41,7 +41,7 @@ body .gform_wrapper.gravity-theme .gform_page_footer input {
   --bs-btn-border-color: var(--bs-primary);
   --bs-btn-hover-border-color: var(--bs-primary-shade);
 }
-.btn.btn-secondary, body .gform_wrapper.gravity-theme .gform_footer button.btn-secondary,
+.btn.btn-secondary, .services-facets button.btn-secondary.facetwp-reset, body .gform_wrapper.gravity-theme .gform_footer button.btn-secondary,
 body .gform_wrapper.gravity-theme .gform_footer input.btn-secondary,
 body .gform_wrapper.gravity-theme .gform_page_footer button.btn-secondary,
 body .gform_wrapper.gravity-theme .gform_page_footer input.btn-secondary {
@@ -178,7 +178,6 @@ a:hover {
 .services-facets .facetwp-counter {
   display: none;
 }
-
 .facetwp-template .layout-grid.services {
   margin: 0;
 }

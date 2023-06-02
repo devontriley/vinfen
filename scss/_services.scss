@@ -16,6 +16,11 @@
     .facetwp-counter {
         display: none;
     }
+
+    button.facetwp-reset {
+        @extend .btn;
+        @extend .btn-primary;
+    }
 }
 
 .facetwp-template {
