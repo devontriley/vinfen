@@ -50,6 +50,26 @@ body .gform_wrapper.gravity-theme .gform_page_footer input.btn-secondary {
   --bs-btn-border-color: var(--bs-secondary);
   --bs-btn-hover-border-color: var(--bs-secondary-shade);
 }
+.btn.btn-tertiary-1, .services-facets button.btn-tertiary-1.facetwp-reset, body .gform_wrapper.gravity-theme .gform_footer button.btn-tertiary-1,
+body .gform_wrapper.gravity-theme .gform_footer input.btn-tertiary-1,
+body .gform_wrapper.gravity-theme .gform_page_footer button.btn-tertiary-1,
+body .gform_wrapper.gravity-theme .gform_page_footer input.btn-tertiary-1 {
+  --bs-btn-bg: var(--bs-tertiary-1);
+  --bs-btn-hover-bg: var(--bs-tertiary-1-shade);
+  --bs-btn-border-color: var(--bs-tertiary-1);
+  --bs-btn-hover-border-color: var(--bs-tertiary-1-shade);
+}
+.btn.btn-tertiary-2, .services-facets button.btn-tertiary-2.facetwp-reset, body .gform_wrapper.gravity-theme .gform_footer button.btn-tertiary-2,
+body .gform_wrapper.gravity-theme .gform_footer input.btn-tertiary-2,
+body .gform_wrapper.gravity-theme .gform_page_footer button.btn-tertiary-2,
+body .gform_wrapper.gravity-theme .gform_page_footer input.btn-tertiary-2 {
+  --bs-btn-color: #ffffff;
+  --bs-btn-hover-color: #ffffff;
+  --bs-btn-bg: var(--bs-tertiary-2);
+  --bs-btn-hover-bg: var(--bs-tertiary-2-shade);
+  --bs-btn-border-color: var(--bs-tertiary-2);
+  --bs-btn-hover-border-color: var(--bs-tertiary-2-shade);
+}
 
 .card {
   --bs-card-border-radius: var(--borderRadius);
