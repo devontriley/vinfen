@@ -12,11 +12,19 @@ if ( wp_get_environment_type() !== 'production' ) {
 // Add Google Tag Manager to head
 function append_gtm_header () { ?>
     <!-- Google Tag Manager -->
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-                new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-            'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-        })(window,document,'script','dataLayer','GTM-TDSV2NZ');</script>
+    <script>
+        (function(w,d,s,l,i){
+            w[l]=w[l]||[];
+            w[l].push({
+                'gtm.start': new Date().getTime(),event:'gtm.js'
+            });
+            var f=d.getElementsByTagName(s)[0],
+            j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';
+            j.async=true;
+            j.src= 'https://www.googletagmanager.com/gtm.js?id='+i+dl;
+            f.parentNode.insertBefore(j,f);
+        })(window,document,'script','dataLayer','GTM-TDSV2NZ');
+    </script>
     <!-- End Google Tag Manager -->
 <?php }
 add_action( 'wp_head', 'append_gtm_header' );
@@ -31,13 +39,7 @@ add_action( 'wp_body_open', 'append_gtm_body' );
 
 if (!function_exists('vinfen_enqueue_styles')) :
     function vinfen_enqueue_styles() {
-        $postType = get_post_type();
-
-        wp_enqueue_style( 'vinfen-style', get_stylesheet_uri(), array( 'heretic-style' ), wp_get_theme()->get( 'Version' ) );
-
-        if ( is_singular( 'post' ) ) {
-            wp_enqueue_style( 'vinfen-layout-grid', get_stylesheet_directory_uri().'/layouts/grid/style.css', array( 'heretic-layout-grid' ) );
-        }
+        wp_enqueue_style( 'vinfen-style', get_stylesheet_uri(), array( 'heretic-style' ), filemtime(get_stylesheet_directory() . '/style.css') );
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'vinfen_enqueue_styles' );
@@ -45,7 +47,7 @@ add_action( 'wp_enqueue_scripts', 'vinfen_enqueue_styles' );
 
 if (!function_exists('vinfen_scripts')) :
     function vinfen_scripts() {
-        wp_enqueue_script( 'vinfen-script', get_stylesheet_directory_uri().'/main.js', array('jquery'), '1.0', true );
+        wp_enqueue_script( 'vinfen-script', get_stylesheet_directory_uri().'/main.js', array('jquery'), filemtime(get_stylesheet_directory() . '/main.js'), true );
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'vinfen_scripts' );
