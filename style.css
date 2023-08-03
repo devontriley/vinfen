@@ -28,6 +28,7 @@ Version:      1.0.0
   --link-hover-color: var(--bs-secondary);
   --notification-bar-bg: var(--bs-secondary);
   --rte-fifty-fifty-bg-color: #E6E8E8;
+  --rte-full-bleed-bg-link-hover-color: var(--bs-tertiary-1);
   --hero-carousel-bg-light: #F3F9FA;
   --hero-carousel-bg-dark: #0C1F22;
   --newsletter-bg-color: var(--bs-secondary);
