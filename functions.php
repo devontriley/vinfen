@@ -10,7 +10,7 @@ add_action( 'wp_enqueue_scripts', 'vinfen_enqueue_styles' );
 
 if (!function_exists('vinfen_scripts')) :
     function vinfen_scripts() {
-        wp_enqueue_script( 'vinfen-script', get_stylesheet_directory_uri().'/main.js', array('jquery'), filemtime(get_stylesheet_directory() . '/main.js'), true );
+        wp_enqueue_script( 'vinfen-script', get_stylesheet_directory_uri().'/main.min.js', array('jquery'), filemtime(get_stylesheet_directory() . '/main.js'), true );
     }
 endif;
 add_action( 'wp_enqueue_scripts', 'vinfen_scripts' );
